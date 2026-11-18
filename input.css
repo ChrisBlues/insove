@@ -1,0 +1,157 @@
+@import url('https://googleapis.com');
+@import "tailwindcss";
+
+@theme {
+    /* Polices */
+    --font-primary: "Poppins", sans-serif;
+    --font-secondary: "Roboto", sans-serif;
+
+    /* Breakpoints */
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 960px;
+    --breakpoint-xl: 1330px;
+
+    /* Colors */
+    --color-primary: #242a2b;
+    --color-secondary: #808080;
+    --color-services: #90C6CD;
+
+    /* Couleurs accent */
+    --color-accent: #1cbccf;
+    --color-accent-secondary: #18abbc;
+    --color-accent-tertiary: #90c6cd;
+
+    /* Gris */
+    --color-grey: #e8f0f1;
+
+    /* Images de fond */
+    /* --background-image-services: url('../img/services/bg.svg'); */
+    --background-image-services: linear-gradient(#90C6CD, #90C6CD);
+    --background-image-testimonials: url('../img/testimonials/bg.svg');
+    --background-image-departments: url('../img/departments/bg.svg');
+
+}
+
+
+
+
+.container {
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+body {
+    @apply text-secondary font-primary text-[17px] leading-8;
+}
+
+p {
+    text-align: justify;
+    hyphens: auto;
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply leading-[120%];
+    /* text-primary supprimé pour avoir "Our best services..." h2 en blanc */
+}
+
+.h1 {
+    @apply text-[36px] xl:text-[64px] font-semibold;
+}
+
+.h2 {
+    @apply text-[30px] xl:text-[44px] font-semibold capitalize tracking-[0.44px];
+}
+
+.h3 {
+    @apply text-[20px] xl:text-[26px] font-semibold;
+}
+
+.h4 {
+    @apply text-[20px] xl:text-[26px] font-semibold capitalize;
+}
+
+.btn {
+    @apply rounded-full uppercase tracking-[1.02px] flex items-center justify-center transition-all;
+}
+
+.btn-sm {
+    @apply h-14 px-10;
+}
+
+.btn-lg {
+    @apply h-16 px-12.5;
+}
+
+.btn-accent {
+    @apply bg-accent text-white
+}
+
+.btn-white {
+    @apply bg-white text-secondary hover:bg-white/90;
+}
+
+.btn-outline {
+    @apply bg-transparent border-2 border-accent text-secondary hover:bg-accent hover:border-transparent hover:text-white
+}
+
+.input,
+.select {
+    @apply w-full rounded-[10px] h-16.5 outline-none border border-[#dbdfdf] text-secondary font-light placeholder:font-light placeholder:text-secondary;
+}
+
+.btn-accent {
+    @apply bg-accent text-white;
+}
+
+.test {
+    @apply border-2 border-accent;
+}
+
+.input {
+    @apply px-4;
+}
+
+.section {
+    @apply py-12 xl:py-37.5;
+}
+
+/* swiper bullets */
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    @apply bg-accent;
+}
+
+/* faq */
+.faq__item.open .faq__answer {
+    @apply h-full;
+}
+
+/* Remerciements au concepteur */
+#thank-you-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  color: #333;
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 1s ease, transform 1s ease;
+  z-index: 1000;
+}
+
+#thank-you-footer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+

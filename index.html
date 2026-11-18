@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insove</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css" rel="stylesheet" />
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!-- ======================== header ========================-->
+    <header class="py-8 lg:pt-6 lg:pb-14">
+        <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0">
+            <!-- logo  -->
+            <div class="flex justify-center lg:justify-normal">
+                <a href="#">
+                    <img src="assets/img/header/logo.svg" alt="">
+                </a>
+            </div>
+
+            <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0">
+                <!-- location -->
+                <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                    <i class="ri-map-pin-2-fill text-2xl text-accent"></i>
+                    <div class="text-secondary">123 Arling, Miola, NY</div>
+                </div>
+
+                <!-- phone -->
+                <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                    <i class="ri-phone-fill text-2xl text-accent"></i>
+                    <div class="text-secondary">(+487) 384 9452</div>
+                </div>
+
+                <!-- btn -->
+                <button class="btn btn-sm btn-outline w-60 lg:w-auto mx-auto lg:mx-0">Book now
+                </button>
+                <!-- mobile nav -->
+                <!-- 47:08 -->
+                <nav
+                    class="mnav bg-white fixed w-75 top-0 h-screen -left-[300px] shadow-2xl lg:hidden transition-all duration-300 z-20">
+                    <!-- nav triggler btn -->
+                    <div
+                        class="mnav__close-btn bg-primary w-8 h-8 relative -right-full top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all">
+                        <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+                    </div>
+
+                    <!-- logo, list, form -->
+                    <div class="px-12 flex flex-col gap-y-12 h-full">
+                        <!-- logo 44:41 -->
+                        <a href="#">
+                            <img src="assets/img/header/logo.svg" alt="">
+                        </a>
+                        <!-- list L.77 45:16-->
+                        <ul class="flex flex-col gap-y-5">
+                            <li><a href="#"
+                                    class="text-secondary hover:text-accent transition-all duration-300">Home</a></li>
+
+                            <li><a href="#"
+                                    class="text-secondary hover:text-accent transition-all duration-300">Doctors</a>
+                            </li>
+
+                            <li><a href="#"
+                                    class="text-secondary hover:text-accent transition-all duration-300">Department</a>
+                            </li>
+
+                            <li><a href="#"
+                                    class="text-secondary hover:text-accent transition-all duration-300">Services</a>
+                            </li>
+
+                            <li><a href="#"
+                                    class="text-secondary hover:text-accent transition-all duration-300">Blog</a></li>
+
+                            <li><a href="#"
+                                    class="text-secondary hover:text-accent transition-all duration-300">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- form L.122 47:23 -->
+                        <form class="relative flex gap-x-[10x]">
+                            <label for="mnav-search-input">
+                                <i class="ri-search-line text-2xl text-accent"></i>
+                            </label>
+                            <input type="text" id="mnav-search-input" placeholder="Search..."
+                                class="outline-none w-40 border-b-2 focus:border-b-2 focus:border-accent placeholder:italic" />
+                        </form>
+                    </div>
+                </nav>
+                <!-- desktop nav 49:50 -->
+                <nav
+                    class="bg-white absolute w-full left-0 -bottom-21.5 shadow-custom1 h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-12.5">
+
+                    <!-- list -->
+                    <ul class="flex gap-x-4">
+                        <li><a href="#"
+                                class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Home</a>
+                        </li>
+
+                        <li><a href="#"
+                                class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Doctors</a>
+                        </li>
+
+                        <li><a href="#"
+                                class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Department</a>
+                        </li>
+
+                        <li><a href="#"
+                                class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Services</a>
+                        </li>
+
+                        <li><a href="#"
+                                class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Blog</a>
+                        </li>
+
+                        <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- form -->
+                    <form class="relative flex gap-x-2.5">
+                        <label for="search-input" class="flex justify-center items-center group">
+                            <i class="ri-search-line text-2xl text-accent"></i>
+                        </label>
+                        <input type="text" id="search-input" placeholder="Search..."
+                            class="outline-none w-25 focus:w-45 focus:border-b-2 focus:border-accent placeholder:italic placeholder:text-base transition-all duration-150">
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======================== hero 55:58 ========================-->
+    <section class="hero bg-grey py-12 xl:pt-12 xl:pb-0 overflow-hidden">
+        <div class="container mx-auto h-full">
+            <!-- text & img -->
+            <div class="flex flex-col xl:flex-row items-center justify-between h-full">
+                <!-- text -->
+                <div class="hero__text xl:w-[48%] text-center xl:text-left">
+                    <!-- badge -->
+                    <div
+                        class="flex items-center bg-white py-2.5 px-5 w-max gap-x-2 mb-6.5 rounded-full mx-auto xl:mx-0">
+                        <!-- badge icon -->
+                        <i class="ri-heart-pulse-line text-2xl text-accent"></i>
+                        <div class="uppercase text-base font-medium text-[#9ab4b7] tracking-[2.24px]">Live your life
+                        </div>
+                    </div>
+                    <!-- title -->
+                    <h1 class="h1 mb-6">We care about your health</h1>
+                    <!-- desc -->
+                    <p class="mb-10.5 md:max-w-xl">
+                        Lorem(20) ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa a rerum consectetur
+                        doloribus aliquid magnam, aperiam tempore optio labore ?</p>
+                    <!-- btn -->
+                    <button class="btn btn-lg btn-accent mx-auto xl:mx-0">Contact us</button>
+                </div>
+                <!-- image -->
+                <div class="hero__img hidden xl:flex max-w-203.5 self-end">
+                    <img src="assets/img/hero/img.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== stats ======================== -->
+    <section class="stats section">
+        <div class="container mx-auto">
+            <!-- wrapper -->
+            <div class="flex flex-col xl:flex-row gap-y-6 justify-between">
+                <!-- item -->
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                    <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2">+5120</div>
+                    <div>Happy Patients</div>
+                </div>
+
+                <!-- item -->
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                    <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2">26</div>
+                    <div>Total Branches</div>
+                </div>
+
+                <!-- item -->
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                    <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2">+53</div>
+                    <div>Senior Doctors</div>
+                </div>
+
+                <!-- item -->
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                    <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2">+10</div>
+                    <div>Years Experience</div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ======================== services ======================== -->
+    <section class="services">
+        <!-- bg -->
+        <div
+            class="bg-services bg-cover bg-no-repeat max-w-366.5 mx-4 xl:mx-auto rounded-[20px] xl:pt-17.5 px-6 xl:px-0 relative h-92 flex items-center xl:items-start -z-10">
+            <div class="container mx-auto">
+                <!-- text -->
+                <div class="services__top flex items-center flex-col xl:flex-row xl:mb-15">
+                    <h2 class="h2 text-white flex-1 mb-4 xl:mb-0 text-center xl:text-left max-w-2xl xl:max-w-none">Our
+                        best services for your solution</h2>
+                    <p class="text-white flex-1 text-center xl:text-left max-w-2xl">Lorem(20) ipsum dolor sit amet
+                        consectetur adipisicing elit. Dignissimos labore rerum quia, velit exercitationem possimus,
+                        placeat, odit illum odio voluptatum.</p>
+                </div>
+            </div>
+        </div>
+        <!-- grid container -->
+        <div class="container mx-auto mt-8 xl:-mt-36">
+            <!-- grid -->
+            <div class="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
+                <!-- grid item -->
+                <div
+                    class="services__item bg-white p-7.5 rounded-[10px] shadow-custom2 min-h-72 flex flex-col items-center text-center">
+                    <!-- grid item icon -->
+                    <div class="mb-3.75">
+                        <img src="assets/icons/services/icon-1.svg" alt="">
+                    </div>
+                    <!-- grid item title -->
+                    <h3 class="h3 mb-2.5">General Practitioners</h3>
+                    <!-- grid item description -->
+                    <p class="font-light leading-normal max-w-75">Lorem(8) ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                    </p>
+                </div>
+
+                <!-- grid item -->
+                <div
+                    class="services__item bg-white p-7.5 rounded-[10px] shadow-custom2 min-h-72 flex flex-col items-center text-center">
+                    <!-- grid item icon -->
+                    <div class="mb-3.75">
+                        <img src="assets/icons/services/icon-2.svg" alt="">
+                    </div>
+                    <!-- grid item title -->
+                    <h3 class="h3 mb-2.5">Pregnancy Support</h3>
+                    <!-- grid item description -->
+                    <p class="font-light leading-normal max-w-75">Lorem(8) ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                    </p>
+                </div>
+
+                <!-- grid item -->
+                <div
+                    class="services__item bg-white p-7.5 rounded-[10px] shadow-custom2 min-h-72 flex flex-col items-center text-center">
+                    <!-- grid item icon -->
+                    <div class="mb-3.75">
+                        <img src="assets/icons/services/icon-3.svg" alt="">
+                    </div>
+                    <!-- grid item title -->
+                    <h3 class="h3 mb-2.5">Nutritional Support</h3>
+                    <!-- grid item description -->
+                    <p class="font-light leading-normal max-w-75">Lorem(8) ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                    </p>
+                </div>
+
+                <!-- grid item -->
+                <div
+                    class="services__item bg-white p-7.5 rounded-[10px] shadow-custom2 min-h-72 flex flex-col items-center text-center">
+                    <!-- grid item icon -->
+                    <div class="mb-3.75">
+                        <img src="assets/icons/services/icon-4.svg" alt="">
+                    </div>
+                    <!-- grid item title -->
+                    <h3 class="h3 mb-2.5">Pharmaceutical Care</h3>
+                    <!-- grid item description -->
+                    <p class="font-light leading-normal max-w-75">Lorem(8) ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== Appointment ======================== -->
+    <section class="appointment section">
+        <div class="container mx-auto">
+            <!-- title -->
+            <h2 class="appointment__title h2 mb-5 xl:mb-12.5 text-center xl:text-left">Book Appointment or call :
+                <span class="text-accent-tertiary">(+487) 384 9452</span>
+            </h2>
+
+            <!-- form -->
+            <form class="appointment__form flex flex-col gap-y-5">
+                <!-- select wrapper -->
+                <div class="flex flex-col xl:flex-row gap-5">
+                    <!-- select 1 -->
+                    <div class="select relative flex items-center">
+                        <!-- icon -->
+                        <div class="absolute right-4">
+                            <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
+                        </div>
+                        <!-- select -->
+                        <select class="appearance-none outline-none h-full w-full bg-transparent px-4">
+                            <option value="1">Select department</option>
+                            <option value="2">Department 1</option>
+                            <option value="3">Department 2</option>
+                            <option value="4">Department 3</option>
+                        </select>
+                    </div>
+
+                    <!-- select 2 -->
+                    <div class="select relative flex items-center">
+                        <!-- icon -->
+                        <div class="absolute right-4">
+                            <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
+                        </div>
+                        <!-- select -->
+                        <select class="appearance-none outline-none h-full w-full bg-transparent px-4">
+                            <option value="1">Select doctor</option>
+                            <option value="2">Dr. Jane Doe</option>
+                            <option value="3">Dr. John Doe</option>
+                            <option value="4">Dr. Bob Smith</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- input wrapper -->
+                <div class="flex flex-col xl:flex-row gap-5">
+                    <input type="text" class="input" placeholder="Full Name">
+                    <input type="text" class="input" placeholder="Phone Number">
+                </div>
+
+                <!-- input wrapper -->
+                <div class="flex flex-col xl:flex-row gap-5">
+                    <input class="input" type="date">
+                    <input class="input" type="time">
+                </div>
+
+                <!-- btn -->
+                <button class="btn btn-lg btn-accent self-start" type="submit">
+                    Book an appointment
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ======================== Testimonials ======================== -->
+    <section class="testimonial bg-testimonials bg-cover bg-right bg-no-repeat py-12 xl:min-h-148.75 xl:py-0">
+        <div class="testimonial__container container max-auto">
+            <div class="flex flex-col items-center gap-x-14 xl:flex-row">
+                <!-- img -->
+                <div class="hidden xl:flex">
+                    <img src="assets/img/testimonials/img.png" alt="">
+                </div>
+                <!-- slider -->
+                <div class="max-w-[98%] xl:max-w-177.5">
+                    <!-- Slider main container -->
+                    <div class="swiper h-100">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="h-full flex flex-col justify-center items-start">
+                                    <div class="max-w-172 mx-auto text-center xl:text-left">
+                                        <!-- message -->
+                                        <p
+                                            class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left before:bg-contain before:bg-bottom before:inline-block before:top-0 before:w-10 before:h-10 before:bg-no-repeat mt-7">
+                                            <span class="mx-2">❝ Lorem(20) ipsum dolor sit amet consectetur adipisicing
+                                                elit. Unde
+                                                voluptates, commodi eos debitis, temporibus dolore architecto provident
+                                                eaque alias cupiditate. ❞</span>
+                                        </p>
+                                        <!-- name -->
+                                        <div class="text-[26px] text-[#4c5354] font-semibold ">James Rodrigo</div>
+                                        <!-- job -->
+                                        <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Customer
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="h-full flex flex-col justify-center items-start">
+                                    <div class="max-w-172 mx-auto text-center xl:text-left">
+                                        <!-- message -->
+                                        <p
+                                            class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left before:bg-contain before:bg-bottom before:inline-block before:top-0 before:w-10 before:h-10 before:bg-no-repeat mt-7">
+                                            <span class="mx-2">❝ Lorem(20) ipsum dolor sit amet consectetur adipisicing
+                                                elit. Unde
+                                                voluptates, commodi eos debitis, temporibus dolore architecto provident
+                                                eaque alias cupiditate. ❞</span>
+                                        </p>
+                                        <!-- name -->
+                                        <div class="text-[26px] text-[#4c5354] font-semibold ">James Rodrigo</div>
+                                        <!-- job -->
+                                        <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Customer
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="h-full flex flex-col justify-center items-start">
+                                    <div class="max-w-172 mx-auto text-center xl:text-left">
+                                        <!-- message -->
+                                        <p
+                                            class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left before:bg-contain before:bg-bottom before:inline-block before:top-0 before:w-10 before:h-10 before:bg-no-repeat mt-7">
+                                            <span class="mx-2">❝ Lorem(20) ipsum dolor sit amet consectetur adipisicing
+                                                elit. Unde
+                                                voluptates, commodi eos debitis, temporibus dolore architecto provident
+                                                eaque alias cupiditate. ❞</span>
+                                        </p>
+                                        <!-- name -->
+                                        <div class="text-[26px] text-[#4c5354] font-semibold ">James Rodrigo</div>
+                                        <!-- job -->
+                                        <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Customer
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide">
+                                <div class="h-full flex flex-col justify-center items-start">
+                                    <div class="max-w-172 mx-auto text-center xl:text-left">
+                                        <!-- message -->
+                                        <p
+                                            class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left before:bg-contain before:bg-bottom before:inline-block before:top-0 before:w-10 before:h-10 before:bg-no-repeat mt-7">
+                                            <span class="mx-2">❝ Lorem(20) ipsum dolor sit amet consectetur adipisicing
+                                                elit. Unde
+                                                voluptates, commodi eos debitis, temporibus dolore architecto provident
+                                                eaque alias cupiditate. ❞</span>
+                                        </p>
+                                        <!-- name -->
+                                        <div class="text-[26px] text-[#4c5354] font-semibold ">James Rodrigo</div>
+                                        <!-- job -->
+                                        <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Customer
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Swiper pagination -->
+                        <div class="swiper-pagination"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== Team 01:44:41 ======================== -->
+    <section class="team section">
+        <div class="container mx-auto">
+            <!-- title -->
+            <h2 class="team__title h2 mb-12.5 text-center xl:text-left">
+                Our Team
+            </h2>
+
+            <!-- slider -->
+            <div class="team__slider swiper min-h-100">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="flex flex-col md:flex-row gap-9">
+                            <!-- item 1 -->
+                            <div class="flex-1 flex flex-col xl:flex-row">
+                                <div class="flex flex-col xl:flex-row items-center gap-7.5">
+                                    <!-- img 1 -->
+                                    <div class="flex-1">
+                                        <img src="assets/img/team/doctor-1.png" alt="Doctor">
+                                    </div>
+                                    <!-- info -->
+                                    <div class="flex-1 flex flex-col">
+                                        <!-- name -->
+                                        <h4 class="h4 mb-2.5">Dr. Leslie Taylor</h4>
+                                        <!-- job -->
+                                        <div class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-5">
+                                            Pediatrician</div>
+                                        <!-- desc -->
+                                        <p class="font-light mb-6.5 max-w-[320px]">Lorem(12) ipsum dolor sit amet
+                                            consectetur adipisicing elit. Vero quas
+                                            eligendi architecto.</p>
+                                        <!-- socials -->
+                                        <div class="flex items-center text-[30px] gap-x-5 text-accent-tertiary">
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-youtube-fill"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-facebook-fill"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-instagram-fill"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-pinterest-fill"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- item 2 -->
+                            <div class="flex-1 flex flex-col xl:flex-row">
+                                <div class="flex flex-col xl:flex-row items-center gap-7.5">
+                                    <!-- img 2 -->
+                                    <div class="flex-1">
+                                        <img src="assets/img/team/doctor-2.png" alt="Doctor">
+                                    </div>
+                                    <!-- info -->
+                                    <div class="flex-1 flex flex-col">
+                                        <!-- name -->
+                                        <h4 class="h4 mb-2.5">Dr. Zachary Brown</h4>
+                                        <!-- job -->
+                                        <div class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-5">
+                                            Cardiologist</div>
+                                        <!-- desc -->
+                                        <p class="font-light mb-6.5 max-w-[320px]">Lorem(12) ipsum dolor sit amet
+                                            consectetur adipisicing elit. Vero quas
+                                            eligendi architecto.</p>
+                                        <!-- socials -->
+                                        <div class="flex items-center text-[30px] gap-x-5 text-accent-tertiary">
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-youtube-fill"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-facebook-fill"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-instagram-fill"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-pinterest-fill"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="flex flex-col md:flex-row gap-9">
+                            <!-- item 1 -->
+                            <div class="flex-1 flex flex-col xl:flex-row">
+                                <div class="flex flex-col xl:flex-row items-center gap-7.5">
+                                    <!-- img 1 -->
+                                    <div class="flex-1">
+                                        <img src="assets/img/team/doctor-3.jpg" alt="Doctor">
+                                    </div>
+                                    <!-- info -->
+                                    <div class="flex-1 flex flex-col">
+                                        <!-- name -->
+                                        <h4 class="h4 mb-2.5">Dr. Audrey Meyer</h4>
+                                        <!-- job -->
+                                        <div class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-5">
+                                            Diabetologist</div>
+                                        <!-- desc -->
+                                        <p class="font-light mb-6.5 max-w-[320px]">Lorem(12) ipsum dolor sit amet
+                                            consectetur adipisicing elit. Vero quas
+                                            eligendi architecto.</p>
+                                        <!-- socials -->
+                                        <div class="flex items-center text-[30px] gap-x-5 text-accent-tertiary">
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-youtube-fill"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-facebook-fill"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-instagram-fill"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-pinterest-fill"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- item 2 -->
+                            <div class="flex-1 flex flex-col xl:flex-row">
+                                <div class="flex flex-col xl:flex-row items-center gap-7.5">
+                                    <!-- img 2 -->
+                                    <div class="flex-1">
+                                        <img src="assets/img/team/doctor-4.jpg" alt="Doctor">
+                                    </div>
+                                    <!-- info -->
+                                    <div class="flex-1 flex flex-col">
+                                        <!-- name -->
+                                        <h4 class="h4 mb-2.5">Dr. Alexander Leroy</h4>
+                                        <!-- job -->
+                                        <div class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-5">
+                                            Nephrologist</div>
+                                        <!-- desc -->
+                                        <p class="font-light mb-6.5 max-w-[320px]">Lorem(12) ipsum dolor sit amet
+                                            consectetur adipisicing elit. Vero quas
+                                            eligendi architecto.</p>
+                                        <!-- socials -->
+                                        <div class="flex items-center text-[30px] gap-x-5 text-accent-tertiary">
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-youtube-fill"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-facebook-fill"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-instagram-fill"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="cursor-pointer hover:text-accent transition-all duration-300">
+                                                <i class="ri-pinterest-fill"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== FAQ's 01:57:37 ======================== -->
+    <section class="faq">
+        <div class="container mx-auto">
+            <h2 class="faq__title h2 text-center mb-12.5">We've got answers</h2>
+            <!-- item wrapper -->
+            <div class="max-w-5xl mx-auto">
+                <!-- item -->
+                <div class="faq__item px-7.5 pt-7 pb-4 border-b cursor-pointer select-none">
+                    <!-- Title & icon -->
+                    <div class="flex items-center justify-between mb-2.5">
+                        <!-- title -->
+                        <h4 class="h4">Why to believe in Insove medical healthcare ?</h4>
+                        <!-- icon -->
+                        <div class="faq__btn text-accent">
+                            <i class="ri-add-fill text-2xl"></i>
+                        </div>
+                    </div>
+                    <!-- answer text -->
+                    <div class="faq__answer h-0 overflow-hidden">
+                        <p class="font-light">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nemo harum quaerat neque
+                            labore obcaecati laboriosam amet fugiat non molestiae ipsam iste ea veritatis, distinctio
+                            incidunt eos iusto id quas!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="faq__item px-7.5 pt-7 pb-4 border-b cursor-pointer select-none">
+                    <!-- Title & icon -->
+                    <div class="flex items-center justify-between mb-2.5">
+                        <!-- title -->
+                        <h4 class="h4">Will we get healthcare updates after surgery ?</h4>
+                        <!-- icon -->
+                        <div class="faq__btn text-accent">
+                            <i class="ri-add-fill text-2xl"></i>
+                        </div>
+                    </div>
+                    <!-- answer text -->
+                    <div class="faq__answer h-0 overflow-hidden">
+                        <p class="font-light">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nemo harum quaerat neque
+                            labore obcaecati laboriosam amet fugiat non molestiae ipsam iste ea veritatis, distinctio
+                            incidunt eos iusto id quas!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="faq__item px-7.5 pt-7 pb-4 border-b cursor-pointer select-none">
+                    <!-- Title & icon -->
+                    <div class="flex items-center justify-between mb-2.5">
+                        <!-- title -->
+                        <h4 class="h4">What preparations are necessary before undergoing surgery ?</h4>
+                        <!-- icon -->
+                        <div class="faq__btn text-accent">
+                            <i class="ri-add-fill text-2xl"></i>
+                        </div>
+                    </div>
+                    <!-- answer text -->
+                    <div class="faq__answer h-0 overflow-hidden">
+                        <p class="font-light">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nemo harum quaerat neque
+                            labore obcaecati laboriosam amet fugiat non molestiae ipsam iste ea veritatis, distinctio
+                            incidunt eos iusto id quas!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="faq__item px-7.5 pt-7 pb-4 border-b cursor-pointer select-none">
+                    <!-- Title & icon -->
+                    <div class="flex items-center justify-between mb-2.5">
+                        <!-- title -->
+                        <h4 class="h4">How long will it take to recover after the surgery ?</h4>
+                        <!-- icon -->
+                        <div class="faq__btn text-accent">
+                            <i class="ri-add-fill text-2xl"></i>
+                        </div>
+                    </div>
+                    <!-- answer text -->
+                    <div class="faq__answer h-0 overflow-hidden">
+                        <p class="font-light">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nemo harum quaerat neque
+                            labore obcaecati laboriosam amet fugiat non molestiae ipsam iste ea veritatis, distinctio
+                            incidunt eos iusto id quas!
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== Departments 02:08:54 ======================== -->
+    <section class="departments section">
+        <div
+            class="departments__bg bg-departments bg-cover xl:bg-auto bg-center bg-no-repeat max-w-366.5 mx-4 xl:mx-auto rounded-[20px] px-6 xl:px-0 py-12 xl:pt-20 xl:pb-22.5 relative min-h-147 flex items-center">
+            <div class="departments__container container mx-auto">
+                <div class="flex flex-col xl:flex-row gap-x-5">
+                    <div
+                        class="xl:w-77.5 flex flex-col gap-y-7.5 xl:gap-y-10 font-medium uppercase text-center xl:left text-base text-[#9ab4b7] xl:pt-3 xl:text-[17px]">
+                        <div class="cursor-pointer hover:text-accent transition-all"> Laboratory Analysis
+                        </div>
+                        <div class="cursor-pointer hover:text-accent transition-all"> Cardiology Clinic
+                        </div>
+                        <div class="cursor-pointer hover:text-accent transition-all"> Gynecology Clinic
+                        </div>
+                        <div class="cursor-pointer hover:text-accent transition-all"> Pathology Clinic
+                        </div>
+                        <div class="cursor-pointer hover:text-accent transition-all"> Pediatrics Clinic
+                        </div>
+                        <div class="cursor-pointer hover:text-accent transition-all"> Neurology Clinic
+                        </div>
+                    </div>
+                    <div class="xl:w-160">
+                        <!-- title -->
+                        <h2 class="h2 mb-5 text-center xl:text-left mt-10">Cardiology Clinic</h2>
+                        <!-- description -->
+                        <p class="mb-7.5 font-light text-center xl:text-left">Lorem(25) ipsum dolor sit amet,
+                            consectetur adipisicing elit. Aspernatur maiores nostrum est? Totam cumque magni dignissimos
+                            architecto ut, cum culpa corrupti, consequatur in illum atque .
+                            <br><br>
+                            Lorem(25) ipsum dolor, sit amet consectetur adipisicing elit. Delectus, molestiae
+                            temporibus! Consequuntur ut aut error tempora temporibus exercitationem cumque ea ab
+                            distinctio, facilis ipsum !
+                        </p>
+                        <div
+                            class="flex flex-col xl:flex-row items-center xl:justify-between max-w-138.75 mb-12.5 mx-auto xl:mx-0">
+                            <div class="text-accent xl:border-r border-[#dcdcdc] xl:pr-6">Neurocritical Care</div>
+                            <div class="text-accent xl:border-r border-[#dcdcdc] xl:pr-6">Neuro Oncology</div>
+                            <div class="text-accent xl:border-r border-[#dcdcdc] xl:pr-6">Geriatric Neurology</div>
+                        </div>
+                        <button class="btn btn-lg btn-accent mx-auto xl:mx-0">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== Blog 02:20:51 ======================== -->
+    <section class="blog">
+        <div class="container mx-auto">
+            <h2 class="blog__title h2 mb-12.5 text-center xl:text-left">Our recent posts
+            </h2>
+
+            <!-- Blog posts -->
+            <div class="flex flex-col xl:flex-row gap-y-6 xl:gap-y-0 items-center xl:justify-between mb-12.5">
+
+                <!-- post 1 -->
+                <div class="blog__post max-w-105 shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+                    <!-- img -->
+                    <div class="relative overflow-hidden">
+                        <img class="group-hover:scale-110 transition-all duration-500" src="assets/img/blog/img-1.png"
+                            alt="" />
+                        <!-- badge -->
+                        <div
+                            class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-1.5 px-4.5">
+                            Medical</div>
+                        <!-- text -->
+                    </div class="px-5 py-6">
+                    <!-- date -->
+                    <div>Jan 2, 2023</div>
+                    <!-- title -->
+                    <h4 class="h4 mb-2.5">
+                        10 foods to avoid for your heart health</h4>
+                    <!-- description -->
+                    <p class="font-light">
+                        It's normal to feel anxiety, worry and grief any time you're diagnosed with a condition that's
+                        certainly true...
+                        <a href="" class="italic underline text-[#4c5354]">Read more</a>
+                    </p>
+                </div>
+
+
+                <!-- post 2 -->
+                <div class="blog__post max-w-105 shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+                    <!-- img -->
+                    <div class="relative overflow-hidden">
+                        <img class="group-hover:scale-110 transition-all duration-500" src="assets/img/blog/img-2.png"
+                            alt="" />
+                        <!-- badge -->
+                        <div
+                            class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-1.5 px-4.5">
+                            Medical</div>
+                        <!-- text -->
+                    </div class="px-5 py-6">
+                    <!-- date -->
+                    <div>Jan 2, 2023</div>
+                    <!-- title -->
+                    <h4 class="h4 mb-2.5">
+                        10 foods to avoid for your heart health</h4>
+                    <!-- description -->
+                    <p class="font-light">
+                        It's normal to feel anxiety, worry and grief any time you're diagnosed with a condition
+                        that's
+                        certainly true...
+                        <a href="" class="italic underline text-[#4c5354]">Read more</a>
+                    </p>
+                </div>
+
+                <!-- post 3 -->
+                <div class="blog__post max-w-105 shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+                    <!-- img -->
+                    <div class="relative overflow-hidden">
+                        <img class="group-hover:scale-110 transition-all duration-500" src="assets/img/blog/img-3.png"
+                            alt="" />
+                        <!-- badge -->
+                        <div
+                            class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-1.5 px-4.5">
+                            Medical</div>
+                        <!-- text -->
+                    </div class="px-5 py-6">
+                    <!-- date -->
+                    <div>Jan 2, 2023</div>
+                    <!-- title -->
+                    <h4 class="h4 mb-2.5">
+                        10 foods to avoid for your heart health</h4>
+                    <!-- description -->
+                    <p class="font-light">
+                        It's normal to feel anxiety, worry and grief any time you're diagnosed with a condition
+                        that's
+                        certainly true...
+                        <a href="" class="italic underline text-[#4c5354]">Read more</a>
+                    </p>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- ======================== Brands 02:32:28 ======================== -->
+    <section class="brands section">
+        <div class="container mx-auto">
+            <div class="flex flex-col xl:flex-row gap-y-12 xl:gap-y-0 justify-between items-center">
+                <img class="brands__logo" src="assets/img/brands/brand-1.svg" alt="" />
+                <img class="brands__logo" src="assets/img/brands/brand-2.svg" alt="" /><img class="brands__logo"
+                    src="assets/img/brands/brand-3.svg" alt="" /><img class="brands__logo"
+                    src="assets/img/brands/brand-4.svg" alt="" /><img class="brands__logo"
+                    src="assets/img/brands/brand-5.svg" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== Newsletter 02:30:08 ======================== -->
+    <section class="newsletter bg-accent md:h-111 py-12 flex items-center relative overflow-hidden">
+        <!-- pattern -->
+        <div class="absolute left-0 bottom-0">
+            <img src="assets/img/newsletter/pattern.svg" alt="">
+        </div>
+        <!-- container -->
+        <div class="newsletter__container container mx-auto">
+            <!-- wrapper -->
+            <div class="flex flex-col lg:flex-row lg:items-center lg:gap-x-14.5">
+                <!-- text -->
+                <div class="flex-1 z-10 text-center md:text-left">
+                    <div class="text-base uppercase text-white tracking-[2.24px] font-medium">
+                        Our newsletter</div>
+                    <h1 class="h1 mb-4 text-white">Subscribe to get more updates</h1>
+                </div>
+                <!-- form -->
+                <form class="flex-1">
+                    <div class="flex flex-col md:flex-row relative gap-y-4">
+                        <input type="text" placeholder="Your email address"
+                            class="rounded-full w-full h-16.5 bg-transparent border-2 border-white outline-none pl-7.5 placeholder:text-white focus: text-white">
+                        <button class="btn btn-lg btn-white md:absolute right-0">Subscribe
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ======================== Footer 02:40:12 ======================== -->
+    <footer class="footer pt-12 xl:pt-37.5">
+        <div class="container mx-auto pb-12 xl:pb-25">
+            <div class="flex flex-col xl:flex-row gap-x-5 gap-y-10">
+                <!-- footer contact section -->
+                <div class="footer__item flex-1 ">
+                    <!-- logo -->
+                    <a href="">
+                        <img class="mb-7.5" src="assets/img/header/logo.svg" alt="">
+                    </a>
+                    <!-- description -->
+                    <p class="mb-5">Lorem(10) ipsum dolor sit amet consectetur adipisicing elit. Nobis, cumque?
+                    </p>
+                    <!-- location, email & phone -->
+                    <div class="flex flex-col gap-y-3 mb-10">
+                        <div class="flex items-center gap-x-1.5">
+                            <i class="ri-map-pin-fill text-[24px] text-accent"></i>
+                            <div>123 Arling, Miola, NY</div>
+                        </div>
+                        <div class="flex items-center gap-x-1.5">
+                            <i class="ri-mail-fill text-[24px] text-accent"></i>
+                            <div>insove@email.com</div>
+                        </div>
+                        <div class="flex items-center gap-x-1.5">
+                            <i class="ri-phone-fill text-[24px] text-accent"></i>
+                            <div>(+123) 456 78910</div>
+                        </div>
+                    </div>
+                    <!-- socials -->
+                    <div class="flex gap-3.5 text-[30px]  ">
+                        <div
+                            class="p-2.5 rounded-[10px] shadow-custom2 text-accent-tertiary hover:text-accent cursor-pointer transition-all">
+                            <i class="ri-facebook-circle-fill"></i>
+                        </div>
+
+                        <div
+                            class="p-2.5 rounded-[10px] shadow-custom2 text-accent-tertiary hover:text-accent cursor-pointer transition-all">
+                            <i class="ri-instagram-fill"></i>
+                        </div>
+
+                        <div
+                            class="p-2.5 rounded-[10px] shadow-custom2 text-accent-tertiary hover:text-accent cursor-pointer transition-all">
+                            <i class="ri-twitter-fill"></i>
+                        </div>
+
+                        <div
+                            class="p-2.5 rounded-[10px] shadow-custom2 text-accent-tertiary hover:text-accent cursor-pointer transition-all">
+                            <i class="ri-linkedin-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer quick links section -->
+                <div class="footer__item flex-1 ">
+                    <h4 class="h4 mb-5">Quick Links</h4>
+                    <div class="flex gap-x-5">
+                        <!-- list 1 -->
+                        <ul class="flex-1 flex flex-col gap-y-5 ">
+                            <li><a href="#" class="hover:text-accent transition-all">Home</a></li>
+                            <li><a href="#" class="hover:text-accent transition-all">Doctors</a></li>
+                            <li><a href="#" class="hover:text-accent transition-all">Departments</a></li>
+                            <li><a href="#" class="hover:text-accent transition-all">Services</a></li>
+                            <li><a href="#" class="hover:text-accent transition-all">Blog</a></li>
+                        </ul>
+
+                        <!-- list 2 -->
+                        <ul class="flex-1 flex flex-col gap-y-5 ">
+                            <li><a href="#" class="hover:text-accent transition-all">Our pricing</a></li>
+                            <li><a href="#" class="hover:text-accent transition-all">Contact</a></li>
+                            <li><a href="#" class="hover:text-accent transition-all">Careers</a></li>
+                            <li><a href="#" class="hover:text-accent transition-all">FAQ's</a></li>
+                            <li><a href="#" class="hover:text-accent transition-all">Privacy Policy</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- footer opening hours section -->
+                <div class="footer__item flex-1 ">
+                    <h4 class="h4 mb-5">Opening Hours</h4>
+                    <!-- list -->
+                     <div class="flex flex-col gap-5">
+                        <!-- item -->
+                         <div class="flex-1">
+                            <div class="flex justify-between items-center border-b pb-2.5">
+                                <div>Monday - Thursday</div>
+                                <div class="text-accent font-medium">8:00 Am - 6:00 Pm</div>
+                            </div>
+                         </div>
+                         <div class="flex-1">
+                            <div class="flex justify-between items-center border-b pb-2.5">
+                                <div>Friday - Saturday</div>
+                                <div class="text-accent font-medium">10:00 Am - 4:00 Pm</div>
+                            </div>
+                         </div>
+                         <div class="flex-1">
+                            <div class="flex justify-between items-center border-b pb-2.5">
+                                <div>Sunday</div>
+                                <div class="text-accent font-medium">Emergency only</div>
+                            </div>
+                         </div>
+                         <div class="flex-1">
+                            <div class="flex justify-between items-center border-b pb-2.5">
+                                <div>Personal</div>
+                                <div class="text-accent font-medium">7:00 Am - 96:00 Pm</div>
+                            </div>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="py-7.5 border-t">
+            <div class="container mx-auto text-center">
+                <div class="font-light text-base">&copy; 2023 Insove - All rights reserved.</div>
+            </div>
+    </footer>
+
+    <!-- Footer de remerciements au concepteur et Copilote pour ses commentaires en anglais -->
+    <div id="thank-you-footer">
+       🪶 Remerciements à Cristian Mihai, le concepteur de ce tutoriel à consulter sur YouTube
+        <a href="https://www.youtube.com/watch?v=qmMIz0_c9Ek" style="color:brown; text-decoration: underline;" target="_blank">ici</a>. — Chris Blues —
+    </div>
+
+
+
+    <!-- ======================== temp div ======================== -->
+    <!-- <div class="h-[4000px]"></div> -->
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- scroll-reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main.js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
